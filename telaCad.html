@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="./src/css/telaCad.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <div class="form-container">
+    <h2>Informações do seu Pet</h2>
+    <form>
+      <div class="form-grid">
+
+        <!-- Upload da imagem -->
+        <label class="photo-upload">
+          <input type="file" name="foto">
+          <div>📷<br>Uma foto do seu pet</div>
+        </label>
+
+        <!-- Nome e idade -->
+        <input type="text" placeholder="Insira o nome do pet" name="nome">
+        <input type="text" placeholder="Insira a idade do seu pet" name="idade">
+
+        <!-- Tipo -->
+        <select required>
+          <option value="" disabled selected>selecione o tipo do seu pet</option>
+          <option>Cachorro</option>
+          <option>Gato</option>
+          <option>Outro</option>
+        </select>
+
+        <!-- Outro tipo -->
+        <input type="text" placeholder="Outro tipo de animal" name="outro">
+
+        <!-- Raça -->
+        <input type="text" placeholder="Raça" name="raca" class="full-width">
+
+      </div>
+    </form>
+  </div>
+</body>
+</html>
