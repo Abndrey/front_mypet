@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    padding: 40px;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+
+  .profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .profile-left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .pet-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+  }
+
+  .pet-info h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+  }
+
+  .pet-info p {
+    margin: 4px 0;
+  }
+
+  .pet-info b {
+    font-weight: bold;
+  }
+
+  .agenda-button {
+    padding: 10px 20px;
+    background-color: #296eff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .agenda-button:hover {
+    background-color: #154ee0;
+  }
+
+  @media (max-width: 700px) {
+    .profile-container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .agenda-button {
+      align-self: flex-end;
+    }
+  }
